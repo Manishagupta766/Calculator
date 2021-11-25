@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title> 
+        <link rel="icon" href="images.png" style="border-radius: 80%;" type="image/gif" >
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+      <div class="output">
+        <div class="lens">
+        
+          <label style="font-size: 30px; text-transform: uppercase;">Calculator</label>
+         <div>
+          <input  class="privious-operand" >
+          <input style="width: 430px; height: 80px; font-size: 50px; text-align:right;border-radius: 6px;" placeholder="AC" id="screen" class="current-operand" ></div> 
+         <section class="btn">
+           <form>
+           
+          <table>
+           
+            <tr>
+                <td><button data-all-clear>AC</button></td>
+                <td><button   data-operation>%</button></td>
+                <td><button  data-operation>√</button></td>
+                <td><button  data-operation>OFF</button></td>
+               
+              </tr>
+              <tr>
+                <td><button>M<sub>R</sub><sup>C</sup></button></td>
+                <td><button data-operation>M+</button></td>
+                <td><button data-delete>del</button></td>
+                <td><button data-operation>÷</button></td>
+              </tr>
+              <tr>
+                <td><button data-number >7</button></td>
+                <td><button data-number>8</button></td>
+                <td><button data-number>9</button></td>
+                <td><button data-operation>×</button></td>
+              </tr>
+              <tr>
+                <td><button data-number>4</button></td>
+                <td><button data-number>5</button></td>
+                <td><button data-number>6</button></td>
+                <td><button data-operation>-</button></td>
+              </tr>
+
+              <tr>
+                <td><button data-number>1</button></td>
+                <td><button data-number>2</button></td>
+                <td><button data-number>3</button></td>
+                <td class="span2"><button data-operation >+</button></td>
+              </tr>
+              <tr>
+                <td><button data-number>0</button></td>
+                <td><button data-operation>.</button></td>
+                <td><button data-equal>=</button></td>
+               
+              </tr>
+             
+
+
+
+          </table> </form></section>
+        </div>
+        
+</div>
+       <script>
+         class calculator{
+           constructor(priviousoperandTextElement,currentoperandTextButtonElement){
+             this.priviousoperandTextElement=priviousoperandTextElement
+             this.currentoperandTextButtonElement=currentoperandTextButtonElement
+           }
+           clear(){
+
+           }
+           delet(){
+
+           }
+           appendNumber(Number){
+
+           }
+           chooseOperation(operation){
+
+           }
+           compute(){
+
+           }
+           updateDisplay(){
+             
+           }
+         }
+            const numberButton= document.querySelectorAll('[data-number]')
+            const operationButton= document.querySelectorAll('[data-operation]')
+            const equalButton= document.querySelectorAll('[data-equal]')
+            const deleteButton= document.querySelectorAll('[data-delete]')
+            const allclearButton= document.querySelectorAll('[data-all-clear]')
+            const priviousoperandTextElement= document.querySelectorAll('[privious-operand]')
+            const currentoperandTextButtonElement= document.querySelectorAll('[current-operand]')
+
+       </script>
+    </body>
+</html>
